@@ -59,10 +59,10 @@ if __name__ == "__main__":
     asyncio.set_event_loop(loop)
 
     async def go():
-        dlg = LoginDialog()
-        if await dlg.exec_async():
-            win = MainWindow()
-            win.show()
+        # dlg = LoginDialog()
+        # if await dlg.exec_async():
+        win = MainWindow()
+        win.show()
 
     app.aboutToQuit.connect(loop.stop)
 
